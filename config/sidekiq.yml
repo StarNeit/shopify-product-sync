@@ -1,0 +1,11 @@
+:concurrency: 5
+:queues:
+  - default
+  - mailers
+
+:scheduler:
+  :schedule:
+    shopify_sync:
+      cron: '0 * * * *'  # Run every hour
+      class: 'ShopifySyncJob'
+      queue: default 

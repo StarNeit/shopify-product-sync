@@ -1,0 +1,4 @@
+shopify_sync:
+  cron: '0 * * * *'
+  class: 'ShopifySyncJob'
+  queue: default 
